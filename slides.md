@@ -280,7 +280,7 @@ Nesta tela, é possível aumentar a opção *Hop Limit* para `7` se estiver em u
 
 ---
 
-#### Configuração da Rede
+#### Configuração da Rede Wi-Fi
 
 ![bg left h:600](./images/image27.jpg)
 
@@ -315,7 +315,7 @@ Considerações sobre o uso do servidor MQTT:
 
 ---
 
-### Mas o Meshtastic só envia e recebe mensagens?
+### Mas o Meshtastic só envia e recebe mensagens? :envelope:
 
 Não!
 
@@ -329,10 +329,52 @@ O *Meshtastic* permite, entre outras funcionalidades, controlar hardwares remota
 
 ---
 
+### Mas é tudo grátis, mesmo? :thinking:
+
+Sim, mas...
+
+#### O Meshtastic depende de você!
+
+Cada nó (rádio) faz parte da rede, então garanta que seus nós estejam ativos e funcionando para aumentar a cobertura da rede mesh LoRa.
+
+Considere montar nós estáticos e montá-lo em locais "estratégicos"
+
+![bg left h:600](./images/antena.jpeg)
+
+---
+
+#### Por exemplo: Nó Solar do LHC!
+
+![bg left h:600](./images/image13.jpg)
+
+---
+
+#### Por exemplo: Nó Solar do LHC!
+
+Observem a curva de carga da bateria do nó solar e também o *Uptime* do nó!
+
+Este nó é ideal para ser posicionado em locais altos mas que não possuem energia elétrica (caixas d'água, prédios abandonados etc)
+
+![bg left h:600](./images/image34.jpg)
+![bg right h:600](./images/image35.jpg)
+
+---
+
+#### Dica: Economize Energia :battery:
+
+Ative o modo de economia de energia. Não se preocupe, o rádio LoRa sempre fica ligado e, quando receber uma mensagem, irá ligar o ESP32.
+
+O modo *low-power* é imprescindível para nós solares e vai render muito mais horas para nós com bateria.
+
+![bg left h:600](./images/image33.jpg)
+
+---
+
 ## Referências Gerais
 
+- **Tópico no Discourse do LHC**: https://discourse.lhc.net.br/t/rede-mesh-com-lora-meshtastic/
 - Documentação oficial do Meshtastic: https://meshtastic.org/docs/
 - Artigo "Meshtastic: Rede de Comunicação Mesh LoRa Aberta e Livre": https://embarcados.com.br/meshtastic-rede-de-comunicacao-mesh-lora-aberta-e-livre/
 - Canal oficial do Meshtastic no Youtube: https://www.youtube.com/@Meshtastic
 - Meshtastic Brasil (comunidade não-oficial): https://www.meshbrasil.com/
-- Grupo do Telegram da comunidade: https://t.me/meshtastic_br
+  - Grupo do Telegram da comunidade: https://t.me/meshtastic_br
